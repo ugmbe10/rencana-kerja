@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 const userSchema = mongoose.Schema(
 {
     id_user :{
-        type :String,
+        type :Number,
         required:true
     },
     username: {
