@@ -8,9 +8,10 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express()
-const URI = process.env.MONGODB_URI
 
-mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true,
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
 }).then(()=> {
     console.log('Connect to MongoDB database success!')
 }).catch(err => {
