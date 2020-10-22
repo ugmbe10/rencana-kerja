@@ -2,10 +2,7 @@ import mongoose from 'mongoose'
 
 const userSchema = mongoose.Schema(
 {
-    id_task: {
-        type: String,
-        required: true,
-    },task_name: {
+    task_name: {
         type: String,
         required: true,
     },
