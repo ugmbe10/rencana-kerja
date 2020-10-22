@@ -2,10 +2,6 @@ import mongoose from 'mongoose'
 
 const userSchema = mongoose.Schema(
 {
-    id_user :{
-        type :Number,
-        required:true
-    },
     username: {
         type: String,
         required: true,
