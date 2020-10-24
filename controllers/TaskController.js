@@ -6,7 +6,7 @@ const taskRouter = express.Router()
 taskRouter.use(express.json())
 
 //@route POST input/add Task
-taskRouter.post('/addTask', async(req, res, next)=>{
+taskRouter.post('/add', async(req, res, next)=>{
     try {
         const {task_name,status, assigned_to}=req.body
         const task = new Task({
