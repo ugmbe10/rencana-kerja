@@ -23,7 +23,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Success!'})
+    res.json({ message: 'Sukses terhubung!'})
 })
 
 // Endpoint untuk mengakses UserController.js
